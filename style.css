@@ -1,0 +1,49 @@
+body {
+    background: blue;
+    display: flex;
+}
+.flex-medium {
+    display: flex;
+}
+p {
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+    body {
+        background: green;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    #large {
+        width: 66%;
+    }
+    #medium {
+        width: 33%;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        background: red;
+        flex-direction: column;
+    }
+    .flex-medium {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    #large {
+        width: 100%;
+    }
+    #medium {
+        width: 100%;
+    }
+}
